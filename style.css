@@ -34,45 +34,37 @@ body {
   display: flex;
   max-width: 700px;
   margin: 0 auto;
-  justify-content: center;
+  justify-content: space-between;
+  
 }
 
 
 
-.perfil1 {
-  box-sizing: border-box;
-  display: inline-flexbox;
-  text-align: center;
-  width: 160px;
-  margin: 0 15px;
-    }
-
-
-
-.perfil2 {
-  box-sizing: border-box;
-  display: inline-flexbox;
-  text-align: center;
-  width: 160px;
-  margin: 0 15px;
-}
-
-.perfil3 {
-  box-sizing: border-box;
-  display: inline-flexbox;
-  width: 160px;
-  margin: 0 15px;
-}
 
 .perfil4 {
-  box-sizing: border-box;
-  display: inline-flexbox;
-  text-align: center;
-    width: 160px;
-  margin: 0 15px;
+  /* box-sizing: border-box; */
+  /* display: inline-flexbox; */
+  /* text-align: center;  */
+  max-width: 160px;
+  min-width: 100%;
+  
 }
 
-.inscrito {
+.perfil4 > div { 
+  display: flex;
+  width: 160px;
+  height: 160px;
+ 
+  justify-content: center;
+  align-items: center;
+  }
+
+  .perfil4 > div > img {
+    width: 60px;
+  height: 60px;
+    }
+
+/* .inscrito {
   display: flex;
   box-sizing: border-box;
   color: white;
@@ -80,7 +72,8 @@ body {
   font-size: 20px;
   justify-content: center;
   margin: 20px;
-}
+  background-color: blue;
+} */
 
 .login {
   display: flexbox;
@@ -93,10 +86,7 @@ font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-align: center;
   
 }
-.login:hover{
-    transition-duration: 1s;
-    color: white;
-}
+
 
 #newProfile {
   box-sizing: border-box;
@@ -130,14 +120,11 @@ font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .foto:hover{
-    border: 5px solid white;
+    border-color: white;
     transition-duration: 0.5s;
 }
 
-.foto4{
-    width: 165px;
-  
-}
+
 
 #newProfile{
     margin-top: 5px;
@@ -148,4 +135,21 @@ font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   box-sizing: border-box;
   display: flexbox;
   flex-wrap: wrap;
+  box-sizing: border-box;
+  display: inline-flexbox;
+  text-align: center;
+   min-width: 160px;
+   
+
+  /* border: 5px solid transparent; */
 }
+
+.perfil:nth-child(n){
+  opacity: 0.5;
+} 
+   /*nth-child- posição*/
+
+
+   .perfil:hover{
+    opacity: 1;
+   }
